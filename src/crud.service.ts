@@ -12,5 +12,8 @@ export const calculateMinPrice = async (negotiation:Negotiation): Promise<void> 
     else if (negotiation.product == "Roxa"){
         let calcBaseValue = 15;
         console.log(calcBaseValue);
+    }
+    else {
+        console.log("Product not registered")
     };
 };
