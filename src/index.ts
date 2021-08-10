@@ -24,4 +24,4 @@ const server = app.listen(PORT, () => {
 });
 
 // Send message for default URL
-app.get('/', (req, res) => res.send('Welcome to NodeJs App using TypeScript and MongoDB'));
+app.get('/', (req, res) => res.send('Welcome to Pricing API'));
