@@ -15,14 +15,38 @@ export const createTransaction = async (req:any, res:any) => {
     });
 };
 
-//TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
-export const getMargin = async (req:any, res:any) => {
-    transactions.find((err: any, result: any) => {
-        if (err) {
+export const getMargin = async  function(req:any, res:any) {
+  let clientName = req.query;
+    transactions.aggregate(
+      [
+        {
+          $group: {
+            _id: "$client",
+            totalRev: {
+              $sum: "$revenue"
+            },
+            totalProd: {
+              $sum: "$productionCosts"
+            },
+            totalSel: {
+              $sum: "$sellingCosts"
+            },
+            totalTra: {
+              $sum: "$transportCosts"
+            }
+          }
+        }
+      ],
+      function (err: any, result: any) {
+        if(err) {
           res.send("Error!");
         } else {
-        // Fazer aqui o cálculo da margin
+          console.log(clientName);
+          //trabalhar com o result e enviar de volta a margin
           res.send(result);
         }
-    });
+      }       
+    );
 };
+
+//find tem que achar todo mundo com o nome da empresa e daí isso vai ser salvo em result. Daí depois em result tem que somar os campos iguais

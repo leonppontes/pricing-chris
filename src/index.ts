@@ -36,10 +36,14 @@ const server = app.listen(PORT, () => {
 });
 
 // Send message for default URL
-app.get('/', (req, res) => res.send('Welcome to Pricing API'));
+app.get('/', (req, res) => res.send('Welcome to the Pricing API'));
 
 // Calculates the negotiation price
 app.post ('/negotiation', routes.negotiationResult);
 
 // Insert transaction
 app.post ('/transaction', crud.createTransaction);
+
+//get client Profit and Loss (getmargin)
+//passar aqui um GET com uma query ?NomeDoCliente (passa espaços?)
+app.get ('/transaction', crud.getMargin);
