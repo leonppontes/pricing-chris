@@ -5,7 +5,7 @@ export const createTransaction = async (req:any, res:any) => {
     const request: Transaction = req.body;
     console.log(JSON.stringify(request))
     let tran = new transactions(request);
-    tran.insertOne((err:any, result:any) => {      //isso daqui tá errado eu acho
+    tran.save((err:any, result:any) => {      //importar db e collection
         if (err) {
             res.send("Error!");
           } else {
