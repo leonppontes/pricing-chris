@@ -12,6 +12,16 @@ if (!process.env.PORT) {
     process.exit(1);
  }
 
+ const uri: string = "mongodb://127.0.0.1:27017/";
+
+mongoose.connect(uri, (err: any) => {
+  if (err) {
+    console.log(err.message);
+  } else {
+    console.log(`Connecting to MONGO`);
+  }
+});
+
  const PORT: number = parseInt(process.env.PORT as string, 10);
  
  const app = express();

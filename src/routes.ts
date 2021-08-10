@@ -1,4 +1,4 @@
-import * as Service from './crud.service';
+import * as Service from './negotiation.service';
 import { Negotiation } from './types';
 
 export const negotiationResult = async (req:any, res:any) => {
