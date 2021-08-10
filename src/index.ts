@@ -3,6 +3,7 @@ import express from 'express';
 import * as dotenv from "dotenv";
 import mongoose from 'mongoose';
 import helmet from "helmet";
+import * as routes from './routes';
 
 dotenv.config();
 
@@ -25,3 +26,6 @@ const server = app.listen(PORT, () => {
 
 // Send message for default URL
 app.get('/', (req, res) => res.send('Welcome to Pricing API'));
+
+// Calculates the negotiation price
+app.post ('/negotiation', routes.negotiationResult);
