@@ -6,5 +6,4 @@ export type Negotiation = {
     sellerExperience: number;                            //years of experience
     taxesIndex: number;                                  //taxes index paid by the client based on the  client working field (0 - 4)
     locationIndex: number;                               //check http://www.custodevida.com.br/brasil/ (0 - 4)
-    updatedAt: Date;                                     //generated data time and date
-  };
+    };

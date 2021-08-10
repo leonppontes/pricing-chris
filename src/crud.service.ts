@@ -11,7 +11,7 @@ export const calculateMinPrice = async (negotiation:Negotiation): Promise<string
         if (negotiation.sellerExperience >= 5) {
             calcBaseValue = calcBaseValue - 5;
         };
-        if (negotiation.volume < 0 || negotiation.sellerExperience <0) {invalidInput = true};
+        if (negotiation.volume < 0 || negotiation.sellerExperience < 0) {invalidInput = true};
         if (negotiation.taxesIndex > 0) {
             switch (negotiation.taxesIndex) {
                 case 1: calcBaseValue = calcBaseValue - 8; break;
@@ -31,15 +31,15 @@ export const calculateMinPrice = async (negotiation:Negotiation): Promise<string
             console.log("Índice de localização inválido")
         }
 
-        if (invalidInput = true) {
+        if (invalidInput == true) {
             result = "Entrada inválida";
         }
         else {
             if (negotiation.price >= calcBaseValue) {
-                result = "Preço sugerido é válido. O preço mínimo para essa negociação é de ${calcBaseValue} reais";
+                result = `Preço sugerido é válido. O preço mínimo para essa negociação é de ${calcBaseValue} reais`;
             }
             else {
-                result = "Preço sugerido não é válido. O preço mínimo para essa negociação é de ${calcBaseValue} reais";
+                result = `Preço sugerido não é válido. O preço mínimo para essa negociação é de ${calcBaseValue} reais`;
             };
         }
     }
@@ -54,6 +54,5 @@ export const calculateMinPrice = async (negotiation:Negotiation): Promise<string
     else {
         console.log("Produto não registrado")
     };
-
     return result;
 };
