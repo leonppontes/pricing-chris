@@ -4,6 +4,7 @@ import * as dotenv from "dotenv";
 import mongoose from 'mongoose';
 import helmet from "helmet";
 import * as routes from './routes';
+import * as crud from './transaction-mongo';
 
 dotenv.config();
 
@@ -39,3 +40,6 @@ app.get('/', (req, res) => res.send('Welcome to Pricing API'));
 
 // Calculates the negotiation price
 app.post ('/negotiation', routes.negotiationResult);
+
+// Insert transaction
+app.post ('/transaction', crud.createTransaction);
