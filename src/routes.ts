@@ -1,6 +1,8 @@
 import * as Service from './negotiation-service';
-import * as Transaction from './transaction-service';
-import { Negotiation } from './types';
+import * as TranService from './transaction-service';
+import { Negotiation, Transaction} from './types';
+import transactions from './transaction-schema';
+
 
 export const negotiationResult = async (req:any, res:any) => {
     const negotiation: Negotiation = req.body;
@@ -12,9 +14,19 @@ export const negotiationResult = async (req:any, res:any) => {
     }
 };
 
+export const createTransaction = async (req:any, res:any) => {
+    const creReq: Transaction = req.body;
+    const trans = await TranService.createTransaction(creReq);
+    try {
+        res.status(200).send(trans);
+    } catch (e) {
+        res.status(404).send(e.message);
+    }
+};
+
 export const getMargin = async (req:any, res:any) => {
     const request: any = req.query;
-    const margin = await Transaction.getMargin(request);
+    const margin = await TranService.getMargin(request);
     console.log(margin);
     try {
         res.status(200).send(margin);

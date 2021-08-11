@@ -1,18 +1,15 @@
-import { Transaction } from "./types";
 import transactions from './transaction-schema';
 
-export const createTransaction = async (req:any, res:any) => {
-    const request: Transaction = req.body;
-    console.log(JSON.stringify(request));
-    let tran = new transactions(request);
+export const createTransaction = async (request:any): Promise<any> => {
+  let tran = new transactions(request);
     tran.save((err:any, result:any) => {      
         if (err) {
-            res.send("Error!");
+            console.log("Error!");
           } else {
-            console.log(JSON.stringify(result))
-            res.send(result);
+            console.log(result);
         }
     });
+  return tran;
 };
 
 export const getMargin = async (request:any): Promise<string> => {
