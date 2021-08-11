@@ -15,6 +15,7 @@ export const negotiationResult = async (req:any, res:any) => {
 export const getMargin = async (req:any, res:any) => {
     const request: any = req.query;
     const margin = await Transaction.getMargin(request);
+    console.log(margin);
     try {
         res.status(200).send(margin);
     } catch (e) {
