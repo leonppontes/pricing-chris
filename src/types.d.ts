@@ -19,3 +19,12 @@ export type Transaction = {
     transactionMonth: Number;
     transactionYear: Number;
     };
+
+export type TotalTransaction = {
+    revenue: Number;
+    productionCosts: Number;
+    sellingCosts: Number;
+    transportCosts: Number;
+    taxes: Number;
+    margin: Number;
+    };
