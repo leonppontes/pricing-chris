@@ -18,7 +18,7 @@ export const getMargin = async (request:any): Promise<string> => {
   const filtered = await transactions.find({client : clientData.client , transactionMonth: clientData.month, transactionYear:  clientData.year, product: clientData.product}).exec();
   const margin = filtered.reduce(function(prev, cur)
   {
-    return prev + ((cur.revenue*(1-(cur.taxes / 100))) - (cur.productionCosts - cur.sellingCosts - cur.transportCosts));
+    return prev + ((cur.revenue*(1-(cur.taxes / 100))) - cur.productionCosts - cur.sellingCosts - cur.transportCosts);
   }, 0);
   marginResult = `A margem do produto no mês desse cliente é de ${margin} reais`;
   return marginResult;
