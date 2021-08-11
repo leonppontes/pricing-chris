@@ -1,5 +1,5 @@
-import * as Service from './negotiation.service';
-import * as Transaction from './transaction-mongo';
+import * as Service from './negotiation-service';
+import * as Transaction from './transaction-service';
 import { Negotiation } from './types';
 
 export const negotiationResult = async (req:any, res:any) => {

@@ -4,7 +4,7 @@ import * as dotenv from "dotenv";
 import mongoose from 'mongoose';
 import helmet from "helmet";
 import * as routes from './routes';
-import * as crud from './transaction-mongo';
+import * as crud from './transaction-service';
 
 dotenv.config();
 
