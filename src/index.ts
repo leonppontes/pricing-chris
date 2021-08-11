@@ -44,6 +44,5 @@ app.post ('/negotiation', routes.negotiationResult);
 // Insert transaction
 app.post ('/transaction', routes.createTransaction);
 
-//get client Profit and Loss (getmargin)
-//passar aqui um GET com uma query ?NomeDoCliente (passa espaços?)
+//get PnL
 app.get ('/transaction', routes.getMargin);
