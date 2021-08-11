@@ -41,9 +41,8 @@ export const getMargin = async  function(req:any, res:any) {
         if(err) {
           res.send("Error!");
         } else {
-          console.log(clientName);
-          //trabalhar com o result e enviar de volta a margin
-          res.send(result);
+          const filtered = result.filter(elem => elem._id === clientName.clientName)
+          res.send(filtered);
         }
       }       
     );
