@@ -11,6 +11,8 @@ import {
     sellingCosts: Number,
     transportCosts: Number,
     taxes: Number,
+    transactionMonth: Number,
+    transactionYear: Number,
   },
   {
     timestamps: true

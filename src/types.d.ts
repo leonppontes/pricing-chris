@@ -16,4 +16,6 @@ export type Transaction = {
     sellingCosts: Number;
     transportCosts: Number;
     taxes: Number;
+    transactionMonth: Number;
+    transactionYear: Number;
     };

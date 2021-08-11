@@ -46,4 +46,4 @@ app.post ('/transaction', crud.createTransaction);
 
 //get client Profit and Loss (getmargin)
 //passar aqui um GET com uma query ?NomeDoCliente (passa espaços?)
-app.get ('/transaction', crud.getMargin);
+app.get ('/transaction', routes.getMargin);

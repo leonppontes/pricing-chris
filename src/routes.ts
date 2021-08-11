@@ -10,3 +10,7 @@ export const negotiationResult = async (req:any, res:any) => {
         res.status(404).send(e.message);
     }
 };
+
+export const getMargin = async (req:any, res:any) => {
+    const request = req.query;
+}
