@@ -41,11 +41,11 @@ export const getMargin = async  function(req:any, res:any) {
         if(err) {
           res.send("Error!");
         } else {
-          const filtered = result.filter(elem => elem._id === clientName.clientName)
-          res.send(filtered);
+          const filtered = result.filter(elem => elem._id === clientName.clientName);
+          const margin = filtered[0].totalRev - filtered[0].totalProd - filtered[0].totalSel - filtered[0].totalTra
+          const PnL = `A margem mensal é de ${margin} reais`
+          res.status(200).send(PnL);
         }
       }       
     );
 };
-
-//find tem que achar todo mundo com o nome da empresa e daí isso vai ser salvo em result. Daí depois em result tem que somar os campos iguais
