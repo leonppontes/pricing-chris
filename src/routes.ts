@@ -1,4 +1,5 @@
 import * as Service from './negotiation.service';
+import * as Transaction from './transaction-mongo';
 import { Negotiation } from './types';
 
 export const negotiationResult = async (req:any, res:any) => {
@@ -12,5 +13,11 @@ export const negotiationResult = async (req:any, res:any) => {
 };
 
 export const getMargin = async (req:any, res:any) => {
-    const request = req.query;
+    const request: any = req.query;
+    const margin = await Transaction.getMargin(request);
+    try {
+        res.status(200).send(margin);
+    } catch (e) {
+        res.status(404).send(e.message);
+    }
 }
