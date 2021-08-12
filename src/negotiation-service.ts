@@ -2,6 +2,7 @@ import { Negotiation } from "./types";
 
 export const calculateMinPrice = async (negotiation:Negotiation): Promise<string> => {
     var calcBaseValue = 0;
+    var sale = "";
     var result = "";
     var invalidInput = false;
 
@@ -48,15 +49,19 @@ export const calculateMinPrice = async (negotiation:Negotiation): Promise<string
         console.log("Índice de localização inválido")
     }
 
+    if (negotiation.volume > 5000 || negotiation.locationIndex >= 290 ){
+        sale = "Essa localização ou volume é elegível para a promoção Dia de Sorte. "
+    };
+
     if (invalidInput == true) {
         result = "Entrada inválida";
     }
     else {
         if (negotiation.price >= calcBaseValue) {
-            result = `Preço sugerido é válido. O preço mínimo para essa negociação é de ${calcBaseValue} reais`;
+            result = `Preço sugerido é válido. O preço mínimo para essa negociação é de ${calcBaseValue} reais.\n ${sale}`;
         }
         else {
-            result = `Preço sugerido não é válido. O preço mínimo para essa negociação é de ${calcBaseValue} reais`;
+            result = `Preço sugerido não é válido. O preço mínimo para essa negociação é de ${calcBaseValue} reais.\n ${sale}`;
         };
     }
 
