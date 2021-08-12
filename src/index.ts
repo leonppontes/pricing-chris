@@ -39,7 +39,7 @@ const server = app.listen(PORT, () => {
 app.get('/', (req, res) => res.send('Welcome to the Pricing API'));
 
 // Calculates the negotiation price
-app.post ('/negotiation', routes.negotiationResult);
+app.get ('/negotiation', routes.negotiationResult);
 
 // Insert transaction
 app.post ('/transaction', routes.createTransaction);
