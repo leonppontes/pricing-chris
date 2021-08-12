@@ -2,12 +2,12 @@ import transactions from './transaction-schema';
 import type {TotalTransaction} from './types';
 
 export const createTransaction = async (request:any): Promise<any> => {
-  let tran = new transactions(request);
+  var tran = new transactions(request);
 
   if (tran.product != "Fofa") {
     tran.feePerUse = 0;
   }
-  
+
     tran.save((err:any, result:any) => {      
         if (err) {
             console.log("Error!");
