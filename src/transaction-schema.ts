@@ -13,6 +13,9 @@ import {
     taxes: Number,
     transactionMonth: Number,
     transactionYear: Number,
+    feePerUse: {type: Number,
+                default: 0
+    },
   },
   {
     timestamps: true

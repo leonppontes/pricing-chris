@@ -18,10 +18,12 @@ export type Transaction = {
     taxes: Number;
     transactionMonth: Number;
     transactionYear: Number;
+    feePerUse?: Number;
     };
 
 export type TotalTransaction = {
     revenue: Number;
+    useQuantRev: Number;
     productionCosts: Number;
     sellingCosts: Number;
     transportCosts: Number;
