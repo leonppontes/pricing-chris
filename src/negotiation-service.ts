@@ -50,7 +50,10 @@ export const calculateMinPrice = async (negotiation:Negotiation): Promise<string
     }
 
     if (negotiation.volume > 5000 || negotiation.locationIndex >= 290 ){
-        sale = "Essa localização ou volume é elegível para a promoção Dia de Sorte. "
+        sale = "Essa localização ou volume é elegível para a promoção Dia de Sorte. O Preço mínimo recebeu R$ 5,00 de desconto.";
+        calcBaseValue = calcBaseValue - 5;
+    } else{
+        sale = "";
     };
 
     if (invalidInput == true) {
