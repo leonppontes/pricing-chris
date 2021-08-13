@@ -37,11 +37,11 @@ const server = app.listen(PORT, () => {
 // Send message for default URL
 app.get('/', (req, res) => res.send('Vendedor, bem-vindo! Pricing API'));
 
-// Calculates the negotiation price
+// checks the feasibility of negotiation and promotion
 app.get ('/negotiation', routes.negotiationResult);
 
-// Insert transaction
+// Insert transaction on DB
 app.post ('/transaction', routes.createTransaction);
 
-//get PnL
+//calculates Margin and PnL
 app.get ('/transaction', routes.getMargin);

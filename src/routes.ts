@@ -2,7 +2,7 @@ import * as Service from './negotiation-service';
 import * as TranService from './transaction-service';
 import { Negotiation, Transaction} from './types';
 
-
+//Negotiation route
 export const negotiationResult = async (req:any, res:any) => {
     const negotiation: Negotiation = req.body;
     const result = await Service.calculateMinPrice(negotiation);
@@ -13,6 +13,7 @@ export const negotiationResult = async (req:any, res:any) => {
     }
 };
 
+//Insert transaction on DB
 export const createTransaction = async (req:any, res:any) => {
     const creReq: Transaction = req.body;
     const trans = await TranService.createTransaction(creReq);
@@ -23,6 +24,7 @@ export const createTransaction = async (req:any, res:any) => {
     }
 };
 
+//calculates Margin and PnL
 export const getMargin = async (req:any, res:any) => {
     const request: any = req.query;
     const margin = await TranService.getMargin(request);
