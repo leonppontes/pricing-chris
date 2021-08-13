@@ -1,5 +1,5 @@
 export type Negotiation = {
-    product: string;                                      //Sorte, Fofa or Roxa 
+    product: "Sorte" | "Roxa" | "Fofa";                                      //Sorte, Fofa or Roxa 
     price: number;                                        //suggested price
     clientName: string;                                   //client name
     volume: number;                                       //monthly revenue in BRL
@@ -10,7 +10,7 @@ export type Negotiation = {
 
 export type Transaction = {
     client: String;
-    product: String;
+    product: "Sorte" | "Roxa" | "Fofa";
     revenue: Number;
     productionCosts: Number;
     sellingCosts: Number;
