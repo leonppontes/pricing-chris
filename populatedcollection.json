@@ -1,0 +1,421 @@
+[{
+  "_id": {
+    "$oid": "61149b87d54cbb3ae8ac749c"
+  },
+  "feePerUse": 0,
+  "client": "Empresa 1",
+  "product": "Sorte",
+  "revenue": 500,
+  "productionCosts": 50,
+  "sellingCosts": 50,
+  "transportCosts": 50,
+  "taxes": 11.25,
+  "transactionMonth": 8,
+  "transactionYear": 2020,
+  "createdAt": {
+    "$date": "2021-08-12T03:54:47.554Z"
+  },
+  "updatedAt": {
+    "$date": "2021-08-12T03:54:47.554Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61149bbfd54cbb3ae8ac749e"
+  },
+  "feePerUse": 0,
+  "client": "Empresa 1",
+  "product": "Sorte",
+  "revenue": 500,
+  "productionCosts": 50,
+  "sellingCosts": 50,
+  "transportCosts": 50,
+  "taxes": 11.25,
+  "transactionMonth": 6,
+  "transactionYear": 2021,
+  "createdAt": {
+    "$date": "2021-08-12T03:55:43.611Z"
+  },
+  "updatedAt": {
+    "$date": "2021-08-12T03:55:43.611Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61149bddd54cbb3ae8ac74a0"
+  },
+  "feePerUse": 0,
+  "client": "Empresa 1",
+  "product": "Sorte",
+  "revenue": 1000,
+  "productionCosts": 100,
+  "sellingCosts": 100,
+  "transportCosts": 100,
+  "taxes": 11.25,
+  "transactionMonth": 7,
+  "transactionYear": 2021,
+  "createdAt": {
+    "$date": "2021-08-12T03:56:13.315Z"
+  },
+  "updatedAt": {
+    "$date": "2021-08-12T03:56:13.315Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61149bf8d54cbb3ae8ac74a2"
+  },
+  "feePerUse": 0,
+  "client": "Empresa 1",
+  "product": "Sorte",
+  "revenue": 1000,
+  "productionCosts": 100,
+  "sellingCosts": 100,
+  "transportCosts": 100,
+  "taxes": 11.25,
+  "transactionMonth": 8,
+  "transactionYear": 2021,
+  "createdAt": {
+    "$date": "2021-08-12T03:56:40.067Z"
+  },
+  "updatedAt": {
+    "$date": "2021-08-12T03:56:40.067Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61149c1dd54cbb3ae8ac74a4"
+  },
+  "feePerUse": 0,
+  "client": "Empresa 1",
+  "product": "Roxa",
+  "revenue": 1000,
+  "productionCosts": 100,
+  "sellingCosts": 100,
+  "transportCosts": 100,
+  "taxes": 11.25,
+  "transactionMonth": 8,
+  "transactionYear": 2021,
+  "createdAt": {
+    "$date": "2021-08-12T03:57:17.842Z"
+  },
+  "updatedAt": {
+    "$date": "2021-08-12T03:57:17.842Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61149c1fd54cbb3ae8ac74a6"
+  },
+  "feePerUse": 0,
+  "client": "Empresa 1",
+  "product": "Roxa",
+  "revenue": 1000,
+  "productionCosts": 100,
+  "sellingCosts": 100,
+  "transportCosts": 100,
+  "taxes": 11.25,
+  "transactionMonth": 8,
+  "transactionYear": 2021,
+  "createdAt": {
+    "$date": "2021-08-12T03:57:19.383Z"
+  },
+  "updatedAt": {
+    "$date": "2021-08-12T03:57:19.383Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61149c46d54cbb3ae8ac74a8"
+  },
+  "feePerUse": 2,
+  "client": "Empresa 1",
+  "product": "Fofa",
+  "revenue": 1000,
+  "productionCosts": 100,
+  "sellingCosts": 100,
+  "transportCosts": 100,
+  "taxes": 11.25,
+  "transactionMonth": 8,
+  "transactionYear": 2021,
+  "createdAt": {
+    "$date": "2021-08-12T03:57:58.410Z"
+  },
+  "updatedAt": {
+    "$date": "2021-08-12T03:57:58.410Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61149c48d54cbb3ae8ac74aa"
+  },
+  "feePerUse": 2,
+  "client": "Empresa 1",
+  "product": "Fofa",
+  "revenue": 1000,
+  "productionCosts": 100,
+  "sellingCosts": 100,
+  "transportCosts": 100,
+  "taxes": 11.25,
+  "transactionMonth": 8,
+  "transactionYear": 2021,
+  "createdAt": {
+    "$date": "2021-08-12T03:58:00.940Z"
+  },
+  "updatedAt": {
+    "$date": "2021-08-12T03:58:00.940Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61149c74d54cbb3ae8ac74ac"
+  },
+  "feePerUse": 0,
+  "client": "Empresa 2",
+  "product": "Sorte",
+  "revenue": 1000,
+  "productionCosts": 100,
+  "sellingCosts": 100,
+  "transportCosts": 100,
+  "taxes": 11.25,
+  "transactionMonth": 8,
+  "transactionYear": 2021,
+  "createdAt": {
+    "$date": "2021-08-12T03:58:44.634Z"
+  },
+  "updatedAt": {
+    "$date": "2021-08-12T03:58:44.634Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61149c79d54cbb3ae8ac74ae"
+  },
+  "feePerUse": 0,
+  "client": "Empresa 2",
+  "product": "Sorte",
+  "revenue": 1000,
+  "productionCosts": 100,
+  "sellingCosts": 100,
+  "transportCosts": 100,
+  "taxes": 11.25,
+  "transactionMonth": 8,
+  "transactionYear": 2021,
+  "createdAt": {
+    "$date": "2021-08-12T03:58:49.829Z"
+  },
+  "updatedAt": {
+    "$date": "2021-08-12T03:58:49.829Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61149c7ed54cbb3ae8ac74b0"
+  },
+  "feePerUse": 0,
+  "client": "Empresa 2",
+  "product": "Sorte",
+  "revenue": 1000,
+  "productionCosts": 100,
+  "sellingCosts": 100,
+  "transportCosts": 100,
+  "taxes": 11.25,
+  "transactionMonth": 7,
+  "transactionYear": 2021,
+  "createdAt": {
+    "$date": "2021-08-12T03:58:54.577Z"
+  },
+  "updatedAt": {
+    "$date": "2021-08-12T03:58:54.577Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61149c82d54cbb3ae8ac74b2"
+  },
+  "feePerUse": 0,
+  "client": "Empresa 2",
+  "product": "Sorte",
+  "revenue": 1000,
+  "productionCosts": 100,
+  "sellingCosts": 100,
+  "transportCosts": 100,
+  "taxes": 11.25,
+  "transactionMonth": 6,
+  "transactionYear": 2021,
+  "createdAt": {
+    "$date": "2021-08-12T03:58:58.774Z"
+  },
+  "updatedAt": {
+    "$date": "2021-08-12T03:58:58.774Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61149c8cd54cbb3ae8ac74b4"
+  },
+  "feePerUse": 0,
+  "client": "Empresa 2",
+  "product": "Sorte",
+  "revenue": 1000,
+  "productionCosts": 100,
+  "sellingCosts": 100,
+  "transportCosts": 100,
+  "taxes": 11.25,
+  "transactionMonth": 8,
+  "transactionYear": 2020,
+  "createdAt": {
+    "$date": "2021-08-12T03:59:08.824Z"
+  },
+  "updatedAt": {
+    "$date": "2021-08-12T03:59:08.824Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61149ca7d54cbb3ae8ac74b6"
+  },
+  "feePerUse": 0,
+  "client": "Empresa 2",
+  "product": "Roxa",
+  "revenue": 500,
+  "productionCosts": 10,
+  "sellingCosts": 10,
+  "transportCosts": 10,
+  "taxes": 11.25,
+  "transactionMonth": 8,
+  "transactionYear": 2020,
+  "createdAt": {
+    "$date": "2021-08-12T03:59:35.319Z"
+  },
+  "updatedAt": {
+    "$date": "2021-08-12T03:59:35.319Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61149cc4d54cbb3ae8ac74b8"
+  },
+  "feePerUse": 3,
+  "client": "Empresa 2",
+  "product": "Fofa",
+  "revenue": 500,
+  "productionCosts": 10,
+  "sellingCosts": 10,
+  "transportCosts": 10,
+  "taxes": 11.25,
+  "transactionMonth": 8,
+  "transactionYear": 2020,
+  "createdAt": {
+    "$date": "2021-08-12T04:00:04.683Z"
+  },
+  "updatedAt": {
+    "$date": "2021-08-12T04:00:04.683Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61149ccdd54cbb3ae8ac74ba"
+  },
+  "feePerUse": 1,
+  "client": "Empresa 2",
+  "product": "Fofa",
+  "revenue": 500,
+  "productionCosts": 10,
+  "sellingCosts": 10,
+  "transportCosts": 10,
+  "taxes": 11.25,
+  "transactionMonth": 8,
+  "transactionYear": 2021,
+  "createdAt": {
+    "$date": "2021-08-12T04:00:13.336Z"
+  },
+  "updatedAt": {
+    "$date": "2021-08-12T04:00:13.336Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61149cd3d54cbb3ae8ac74bc"
+  },
+  "feePerUse": 1,
+  "client": "Empresa 2",
+  "product": "Fofa",
+  "revenue": 500,
+  "productionCosts": 10,
+  "sellingCosts": 10,
+  "transportCosts": 10,
+  "taxes": 11.25,
+  "transactionMonth": 6,
+  "transactionYear": 2021,
+  "createdAt": {
+    "$date": "2021-08-12T04:00:19.661Z"
+  },
+  "updatedAt": {
+    "$date": "2021-08-12T04:00:19.661Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61149cddd54cbb3ae8ac74be"
+  },
+  "feePerUse": 1,
+  "client": "Empresa 2",
+  "product": "Fofa",
+  "revenue": 500,
+  "productionCosts": 10,
+  "sellingCosts": 10,
+  "transportCosts": 10,
+  "taxes": 11.25,
+  "transactionMonth": 8,
+  "transactionYear": 2021,
+  "createdAt": {
+    "$date": "2021-08-12T04:00:29.468Z"
+  },
+  "updatedAt": {
+    "$date": "2021-08-12T04:00:29.468Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61149d89d54cbb3ae8ac74c0"
+  },
+  "feePerUse": 1,
+  "client": "Empresa 2",
+  "product": "Fofa",
+  "revenue": 500,
+  "productionCosts": 10,
+  "sellingCosts": 10,
+  "transportCosts": 10,
+  "taxes": 11.25,
+  "transactionMonth": 8,
+  "transactionYear": 2021,
+  "createdAt": {
+    "$date": "2021-08-12T04:03:21.578Z"
+  },
+  "updatedAt": {
+    "$date": "2021-08-12T04:03:21.578Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6115e1a34c07ce2d20d1798e"
+  },
+  "feePerUse": 2,
+  "client": "Empresa 2",
+  "product": "Fofa",
+  "revenue": 5000,
+  "productionCosts": 100,
+  "sellingCosts": 10,
+  "transportCosts": 10,
+  "taxes": 11.25,
+  "transactionMonth": 8,
+  "transactionYear": 2021,
+  "createdAt": {
+    "$date": "2021-08-13T03:06:11.435Z"
+  },
+  "updatedAt": {
+    "$date": "2021-08-13T03:06:11.435Z"
+  },
+  "__v": 0
+}]

@@ -1,7 +1,6 @@
 import * as Service from './negotiation-service';
 import * as TranService from './transaction-service';
-import { Negotiation, Transaction, TotalTransaction} from './types';
-import transactions from './transaction-schema';
+import { Negotiation, Transaction} from './types';
 
 
 export const negotiationResult = async (req:any, res:any) => {

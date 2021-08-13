@@ -2,7 +2,7 @@ import transactions from './transaction-schema';
 import type {TotalTransaction} from './types';
 
 export const createTransaction = async (request:any): Promise<any> => {
-  var tran = new transactions(request);
+  const tran = new transactions(request);
 
   if (tran.product != "Fofa") {
     tran.feePerUse = 0;
@@ -45,7 +45,7 @@ export const getMargin = async (request:any): Promise<TotalTransaction> => {
   const useQuantRev = filtered.reduce(function(prev, cur){ return prev + 
     cur.feePerUse*0.1*cur.revenue}, 0);
 
-  let marginResult: TotalTransaction = {revenue: revenue, useQuantRev: useQuantRev, 
+  var marginResult: TotalTransaction = {revenue: revenue, useQuantRev: useQuantRev, 
     productionCosts: prod, sellingCosts: sell, transportCosts: transp, taxes: tax, margin: margin};
 
   return marginResult;
