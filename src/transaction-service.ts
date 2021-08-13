@@ -1,13 +1,20 @@
 import transactions from './transaction-schema';
-import type {TotalTransaction} from './types';
+import type {TotalTransaction, Transaction} from './types';
 
-export const createTransaction = async (request:any): Promise<any> => {
+export const createTransaction = async (request:Transaction): Promise<any> => {
   const tran = new transactions(request);
+  var prodErr = "";
 
   //Only Pedra Fofa uses feePerUse
   if (tran.product != "Fofa") {
     tran.feePerUse = 0;
     console.log("Apenas o produto Pedra Fofa tem taxa por uso");
+  };
+
+  //Checks if product exists
+  if (tran.product != "Sorte" && tran.product != "Roxa" && tran.product != "Fofa"){
+    prodErr = "Nome do produto não registrado";
+    return prodErr;
   };
 
   //saves data to the DB
@@ -21,8 +28,15 @@ export const createTransaction = async (request:any): Promise<any> => {
   return tran;
 };
 
-export const getMargin = async (request:any): Promise<TotalTransaction> => {
+export const getMargin = async (request:any): Promise<any> => {
   const clientData = request;
+  var prodErr = "";
+  
+  //Checks if product exists
+  if (clientData.product != "Sorte" && clientData.product != "Roxa" && clientData.product != "Fofa"){
+    prodErr = "Nome do produto não registrado";
+    return prodErr;
+  };
   
   //filtered by client, product and month. The PnL and margin are generated from this data
   const filtered = await transactions.find({client : clientData.client , 

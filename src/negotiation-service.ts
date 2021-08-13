@@ -17,7 +17,9 @@ export const calculateMinPrice = async (negotiation:Negotiation): Promise<string
         calcBaseValue = 30;
     }
     else {
-        console.log("Produto não registrado")
+        console.log("Produto não registrado");
+        result = "Entrada inválida";
+        return result
     };
 
     //clients with high volume get a discount
